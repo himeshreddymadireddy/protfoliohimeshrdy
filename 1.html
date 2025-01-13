@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himesh M - ML Enthusiast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #0d1b2a, #1a3d6d);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/diamonds.png');
+            opacity: 0.1;
+        }
+        .typing-effect {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        section {
+            padding: 60px 0;
+        }
+        .skill-icon {
+            margin-right: 10px;
+            font-size: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-icon:hover {
+            transform: scale(1.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .contact-link {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 1.2rem;
+            color: #0d1b2a;
+        }
+        .contact-link:hover {
+            color: #0f9d58;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-brand {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 1.8rem;
+            color: #0f9d58;
+        }
+        #skills .col-md-3 {
+            transition: transform 0.3s ease-in-out;
+            border-radius: 12px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #skills .col-md-3:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+        #projects .project-tile {
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #222;
+        }
+        #projects .project-tile:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background: linear-gradient(135deg, #222, #0d1b2a);
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Himesh M</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="container">
+            <h1>Hi, I'm Himesh M</h1>
+            <p class="lead typing-effect">ML Enthusiast | Python | SQL | Django | Machine Learning</p>
+            <a href="#projects" class="btn btn-success mt-3">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-dark parallax" style="background-image: url('https://source.unsplash.com/1600x900/?technology');">
+        <div class="container">
+            <h2 class="text-center text-success">About Me</h2>
+            <p class="text-center">I am Himesh M, a machine learning enthusiast passionate about building intelligent systems. With a strong foundation in Python, SQL, and Django, I aim to solve real-world problems through data-driven solutions and advanced algorithms. I’m always eager to learn and grow in the fields of data science and artificial intelligence.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center text-success">Projects</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="project-tile">
+                        <h4>Project 1</h4>
+                        <p>Brief description of the project.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-tile">
+                        <h4>Project 2</h4>
+                        <p>Brief description of the project.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-tile">
+                        <h4>Project 3</h4>
+                        <p>Brief description of the project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-dark">
+        <div class="container">
+            <h2 class="text-center text-success">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <i class="fab fa-python skill-icon" title="Python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-database skill-icon" title="SQL"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-js skill-icon" title="Django"></i>
+                    <span>Django</span>
+                </div>
+                <div class="col-md-3">
+                    <i class="fab fa-cogs skill-icon" title="Machine Learning"></i>
+                    <span>Machine Learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-white">
+        <p>&copy; 2025 Himesh M. All rights reserved.</p>
+        <a href="mailto:himeshmadireddy@gmail.com" class="contact-link">Email</a>
+        <a href="https://www.linkedin.com/in/himeshm" class="contact-link">LinkedIn</a>
+        <a href="https://github.com/himeshm" class="contact-link">GitHub</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
